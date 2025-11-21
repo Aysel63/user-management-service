@@ -113,7 +113,10 @@ Environment variables:
 ```
 http://localhost:8080/api/v1/users
 ```
-
+### Deployed URL
+```
+https://user-management-service-fmkb.onrender.com/api/v1/users
+```
 ### 1. Create User
 **POST** `/api/v1/users`
 
@@ -312,13 +315,16 @@ mvn clean package -DskipTests
 4. Connect GitHub repository
 5. Set environment variables:
    ```
-   DB_HOST=<your-postgres-host>
-   DB_USER=<username>
-   DB_PASSWORD=<password>
-   DB_NAME=userdb
+   DB_HOST=dpg-d4g5t3re5dus739kiidg-a
+   DB_USER=userdb_8jt4_user
+   DB_PASSWORD=<your password>
+   DB_NAME=userdb_8jt4
+   SERVER_PORT=10000
    SPRING_PROFILES_ACTIVE=prod
    ```
 6. Deploy
+7. Verify deployment:
+   https://user-management-service-fmkb.onrender.com/api/v1/users
 
 ### Troubleshooting
 
