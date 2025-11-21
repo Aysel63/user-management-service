@@ -1,86 +1,57 @@
-# IDE - IntelliJ IDEA
+############################
+# Maven build
+############################
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+############################
+# IntelliJ IDEA
+############################
 .idea/
 *.iml
 *.iws
 *.ipr
-*.idsettings
-.project
-.classpath
 
-# IDE - VS Code
-.vscode/
-*.swp
-*.swo
-*~
-
-# Build directories
-target/
-build/
-*.jar
-*.war
-*.ear
-*.zip
-*.tar.gz
-
-# Maven
-pom.xml.tag
-pom.xml.releaseBackup
-release.properties
-.flattened-pom.xml
-
-# Gradle
-.gradle/
-gradle/
-
+############################
 # Logs
-logs/
+############################
 *.log
-*.log.*
 
-# Environment variables
+############################
+# Environment & Secrets
+############################
 .env
-.env.local
-.env.*.local
-.env.prod
+*.env
+.env.*
 
-# OS specific
+############################
+# OS files
+############################
 .DS_Store
 Thumbs.db
-ehthumbs.db
-.AppleDouble
-.LSOverride
 
-# Compiled Java classes
+############################
+# Java
+############################
 *.class
 
-# Node modules (if any)
-node_modules/
-npm-debug.log
-yarn-error.log
+############################
+# Maven wrapper
+############################
+mvnw.cmd
+mvnw
 
-# macOS
-.AppleDesktop
-$RECYCLE.BIN/
+############################
+# Spring Boot
+############################
+application.properties
+application.yml
+application-dev.yml
+application-prod.yml
+application-*.yml
+application-*.properties
 
-# Windows
-*.exe
-*.bat
-
-# Eclipse
-.settings/
-.metadata
-.loadpath
-
-# NetBeans
-nbproject/
-nbbuild/
-nbdist/
-
-# Test reports
-test-results/
-*.coverage
-
-# Miscellaneous
-*.tmp
-*.bak
-.#*
+############################
+# Docker
+############################
+docker-data/
