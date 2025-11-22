@@ -30,4 +30,4 @@ logging:
     console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
 
 server:
-  port: ${SERVER_PORT:8080}
+  port: ${PORT:8080}
